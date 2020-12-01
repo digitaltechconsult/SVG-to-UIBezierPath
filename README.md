@@ -29,10 +29,10 @@ override func viewDidLoad() {
 }
 ```
 
-Known issue:
-* incomplete implementation, currently implemented methods: `UIBezierPath.move(to:)`, `UIBezierPath.addCurve(to:, controlPoint1:, controlPoint2:)`, `UIBezierPath.addLine(to:)`, `UIBezierPath.close()`
-* the parser only reads the `<path d=""></path>` value, not the entire SVG file
-* there might be errors in parsing different SVG formats, I tested the generated code from Sketch and it works ok. As a workaround you can import the SVG in Sketch App and then export code from there.
+Known issues:
+* only `UIBezierPath.move(to:)`, `UIBezierPath.addCurve(to:, controlPoint1:, controlPoint2:)`, `UIBezierPath.addLine(to:)`, `UIBezierPath.close()` methods are implemented;
+* the parser only reads the `<path d=""></path>` value, not the entire SVG file;
+* there might be errors in parsing different SVG formats, I tested the generated code from Sketch and it works ok. As a workaround you can import the SVG in Sketch App and then export code from there;
 
 
 
